@@ -1,0 +1,14 @@
+api_base_url: "https://fakerapi.it/api/v2"
+total_records_needed : 30000
+db_batch_size: 30000
+timeout: 10
+max_retries: 3
+backoff_factor: 1
+endpoints:
+  - name: 'persons'
+    url: '/persons'
+    method: 'GET'
+    params:
+      _quantity: 1000
+      _seed: 1
+      _locale: "en_US"
